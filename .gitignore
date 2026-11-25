@@ -1,0 +1,30 @@
+# Credenciais e segredos
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*credentials*.json
+*credenciais*.json
+
+# Dados e backups operacionais
+n8n_data/
+.backups/
+backups/
+*.sqlite
+*.sqlite3
+*.db
+*.log
+logs/
+output/
+relatorios/
+reports/
+*execution-data*.json
+*backup*.zip
+
+# Desenvolvimento
+__pycache__/
+.venv/
+.vscode/
