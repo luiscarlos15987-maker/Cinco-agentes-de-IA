@@ -1,0 +1,41 @@
+{
+  "tipo": "amostra_operacional_agregada",
+  "descricao": "Exemplo de métricas agregadas de execuções demonstrativas, sem IDs, horários individuais ou dados de entrada/saída",
+  "fonte": "amostra compartilhada pelo autor no histórico do projeto",
+  "execucoes_consultadas": 4,
+  "execucoes_com_cinco_agentes_executados": 3,
+  "execucoes_sem_agentes_executados": 1,
+  "agentes": [
+    {
+      "nome": "Triagem",
+      "execucoes_observadas": 3,
+      "falhas_observadas": 0
+    },
+    {
+      "nome": "Qualidade",
+      "execucoes_observadas": 3,
+      "falhas_observadas": 0
+    },
+    {
+      "nome": "Análise",
+      "execucoes_observadas": 3,
+      "falhas_observadas": 0
+    },
+    {
+      "nome": "Relatório",
+      "execucoes_observadas": 3,
+      "falhas_observadas": 0
+    },
+    {
+      "nome": "Auditoria",
+      "execucoes_observadas": 3,
+      "falhas_observadas": 0
+    }
+  ],
+  "ressalvas": [
+    "Amostra pequena de demonstração; não representa disponibilidade em produção.",
+    "Ausência de falha técnica dos nós não valida o conteúdo produzido pelos modelos.",
+    "Execução sem nós de agentes não é automaticamente falha de agente.",
+    "Tempos por nó e métricas de produção não são publicados."
+  ]
+}
