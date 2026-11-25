@@ -1,0 +1,35 @@
+name: Verificação automática dos workflows
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 12 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    name: Segurança, estrutura e testes dos agentes
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Obter código
+        uses: actions/checkout@v4
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Preparar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validar JSON e verificar segredos
+        run: python scripts/quality_gate.py --mode portfolio
+      - name: Testar lógica JavaScript com dados fictícios
+        run: node scripts/test_agents.mjs workflows/cinco_agentes_demo_sanitizado.json
+      - name: Verificar sintaxe do diagnóstico local
+        if: hashFiles('scripts/auditar_n8n_local.py') != ''
+        run: python -m py_compile scripts/auditar_n8n_local.py
