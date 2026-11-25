@@ -1,5 +1,7 @@
 # Sistema multiagente de IA — Demonstração n8n
 
+[![Verificação automática](https://github.com/luiscarlos15987-maker/Cinco-agentes-de-IA/actions/workflows/ci.yml/badge.svg)](https://github.com/luiscarlos15987-maker/Cinco-agentes-de-IA/actions/workflows/ci.yml)
+
 Projeto de portfólio para demonstrar um **fluxo de cinco agentes de IA em sequência**, validação determinística em JavaScript e geração de relatório com revisão humana.
 
 > **Demonstração, não produto em produção.** Usa registros fictícios da API pública JSONPlaceholder. A versão deste repositório é sanitizada: não contém credenciais, chaves, dados brutos de execução, respostas dos modelos ou tokens de sessão.
@@ -23,6 +25,23 @@ Os nós de agentes utilizam um modelo de linguagem configurável no n8n. A amost
 - `docs/metricas_demo_anonimizadas.json`: resultados **agregados** de quatro execuções de demonstração, sem dados pessoais, IDs ou horários.
 - `docs/COMO_IMPORTAR.md`: importação, configuração e limitações.
 - `SECURITY.md`: escopo da sanitização e recomendações antes da publicação.
+
+## Qualidade automatizada
+
+A verificação `GitHub Actions` roda a cada alteração, em pull requests, manualmente e uma vez por semana. Não precisa de chave OpenAI e não consome créditos de IA.
+
+- **Estrutura e segurança:** checa JSON, conexões, cinco agentes + cinco modelos e ferramentas, IDs, `active: false`, ausência de credenciais embutidas e padrões comuns de segredo.
+- **Testes JavaScript reais, sem rede:** executa os nós Code de preparação, validação e construção do relatório com três registros fictícios e saídas de agentes simuladas.
+- **Revisão humana e limites:** os testes conferem a presença de auditoria/relatório, mas **não comprovam a qualidade das respostas do modelo**.
+
+Para reproduzir no VS Code com Python 3.12 e Node.js 22:
+
+```powershell
+python scripts/quality_gate.py --mode portfolio
+node scripts/test_agents.mjs workflows/cinco_agentes_demo_sanitizado.json
+```
+
+[Consultar histórico dos testes automáticos](https://github.com/luiscarlos15987-maker/Cinco-agentes-de-IA/actions) · [Escopo e pendências](docs/VALIDACAO.md)
 
 ## Demonstração e evidências
 
