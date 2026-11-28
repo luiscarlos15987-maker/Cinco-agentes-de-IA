@@ -19,3 +19,7 @@ Conforme capturas apresentadas pelo autor, a cópia demonstrativa foi importada 
 - Revisão de segurança do ambiente de execução.
 
 O portfólio mostra um protótipo demonstrativo, não um SLA ou um sistema empresarial pronto.
+
+## Encerramento demonstrativo
+
+O escopo de portfólio da versão 1.0 está consolidado em [VERSAO_1_0.md](VERSAO_1_0.md). Mantém-se a revisão humana e a ausência de credenciais no repositório.

@@ -6,6 +6,8 @@ Projeto de portfólio para demonstrar um **fluxo de cinco agentes de IA em sequ�
 
 > **Demonstração, não produto em produção.** Usa registros fictícios da API pública JSONPlaceholder. A versão deste repositório é sanitizada: não contém credenciais, chaves, dados brutos de execução, respostas dos modelos ou tokens de sessão.
 
+**Versão demonstrativa 1.0:** teste manual local concluído. [Notas da versão](docs/VERSAO_1_0.md).
+
 ## Arquitetura
 
 1. **Entrada:** acionamento manual e consulta de dados fictícios à API JSONPlaceholder.
