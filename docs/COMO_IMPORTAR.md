@@ -18,7 +18,7 @@
 - Importar o JSON não configura credenciais automaticamente.
 - A geração de TXT depende do volume/pasta e das permissões de escrita.
 - Pode exigir ajustes entre versões do n8n.
-- O JSON foi validado estruturalmente; a importação desta cópia **não foi executada nesta sessão**.
+- O JSON foi validado estruturalmente e o autor demonstrou a execução da cópia local importada em 27/11/2026. A execução em outras instalações depende da configuração local.
 
 ## Links oficiais
 

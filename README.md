@@ -47,6 +47,10 @@ node scripts/test_agents.mjs workflows/cinco_agentes_demo_sanitizado.json
 
 Na pequena amostra disponibilizada: **4 execuções consultadas**, **3 percorreram os cinco agentes**, **1 não executou nenhum agente**. Não há indicação de falha individual entre as etapas efetivamente executadas na amostra. Isso **não demonstra estabilidade em produção** nem valida a correção do conteúdo gerado.
 
+### Teste local da cópia de portfólio
+
+Em 27/11/2026, o autor apresentou evidência visual de execução manual ponta a ponta da demonstração no n8n: consulta de dados fictícios, validação JavaScript, cinco agentes com GPT-4o-mini, conversão e gravação de relatório TXT. O workflow demonstrativo permanece despublicado. A evidência não constitui avaliação semântica das respostas nem validação de produção. Nenhum relatório bruto ou credencial foi publicado.
+
 ## Como reproduzir
 
 1. Instale uma instância do n8n com acesso aos nós de IA usados neste exemplo.
@@ -60,6 +64,6 @@ Na pequena amostra disponibilizada: **4 execuções consultadas**, **3 percorrer
 - Não inclui aplicações reais de clientes, envio de mensagens nem integração com sistemas empresariais.
 - Verificação de sintaxe de e-mail não garante existência ou recebimento.
 - O fluxo pode exigir adaptação de nós ou configurações para versões diferentes do n8n.
-- A importação não foi testada diretamente nesta sessão; o JSON foi validado estruturalmente.
+- A versão foi validada estruturalmente, e a cópia local importada foi testada pelo autor. Não há garantia de compatibilidade com outras versões do n8n.
 
 **Fontes:** [Documentação n8n — exportação e importação](https://docs.n8n.io/workflows/export-import/) · [Documentação n8n — leitura/escrita de arquivos](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.readwritefile/) · [JSONPlaceholder](https://jsonplaceholder.typicode.com/).

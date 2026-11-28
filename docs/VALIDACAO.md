@@ -10,11 +10,11 @@
 - Busca de padrões comuns de token, chave privada, endereços de e-mail e identificadores de sessão: sem correspondências nos campos do arquivo.
 - Correspondência de conteúdo entre a cópia sanitizada enviada e o arquivo publicado.
 
-## O que ainda precisa de teste
+## Evidência de execução local — 27/11/2026
 
-- Importação real deste pacote no n8n da máquina do usuário.
-- Credenciais configuradas e conexão válida com o modelo.
-- Execução ponta a ponta em ambiente controlado, incluindo gravação do TXT.
+Conforme capturas apresentadas pelo autor, a cópia demonstrativa foi importada no n8n, os cinco modelos foram configurados e o fluxo manual concluiu as cinco etapas de IA e a gravação do TXT. O teste técnico foi demonstrado com dados fictícios; o assistente não acessou a instância local. A cópia permanece despublicada.
+
+## O que ainda precisa de teste
 - Revisão humana do conteúdo produzido por IA.
 - Revisão de segurança do ambiente de execução.
 
